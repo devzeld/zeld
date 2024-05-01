@@ -1,3 +1,6 @@
+
+$gradiant-color: -webkit-linear-gradient(90deg, rgba(0,133,255,1) 40%, rgb(141, 96, 251) 120%);
+
 .menu {
   .menu-list {
     padding: 0;
@@ -10,7 +13,7 @@
 
       a {
         position: relative;
-        background: -webkit-linear-gradient(90deg, rgba(0,133,255,1) 40%, rgb(141, 96, 251) 120%);
+        background: $gradiant-color;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         cursor: pointer;
@@ -24,7 +27,7 @@
           height: 2px;
           bottom: 0;
           left: 0;
-          background: -webkit-linear-gradient(90deg, rgba(0,133,255,1) 40%, rgb(141, 96, 251) 120%);
+          background: $gradiant-color;
           transform-origin: bottom right;
           transition: transform 0.3s ease-in-out;
         }
