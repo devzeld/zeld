@@ -1,4 +1,4 @@
-import '../styles/components/Menu.scss';
+import '../styles/components/Menu.module.scss';
 import {useNavigate} from "react-router-dom";
 
 function Menu() {

@@ -1,4 +1,4 @@
-import '../styles/pages/Home.scss'
+import '../styles/pages/Home.module.scss'
 
 function Home() {
     return (

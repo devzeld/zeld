@@ -1,4 +1,4 @@
-import '../styles/pages/Projects.scss'
+import '../styles/pages/Projects.module.scss'
 
 function Projects() {
     return (

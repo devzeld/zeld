@@ -1,12 +1,15 @@
-import '../styles/components/Header.scss'
+import '../styles/components/Header.module.scss'
 import Menu from "./Menu.tsx";
 import Logo from "./Logo.tsx";
 
 function Header() {
+    
     return (
         <>
-            <Logo/>
-            <Menu/>
+            <div>
+                <Logo/>
+                <Menu/>
+            </div>
         </>
     )
 }
