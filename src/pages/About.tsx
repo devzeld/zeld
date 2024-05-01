@@ -1,4 +1,4 @@
-import '../styles/pages/About.module.scss'
+import '../styles/pages/About.scss'
 
 function About() {
     return (

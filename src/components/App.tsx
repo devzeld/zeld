@@ -1,4 +1,4 @@
-import "../styles/components/App.module.scss"
+import "../styles/components/App.scss"
 import {HashRouter as Router, Routes, Route,} from "react-router-dom";
 import Header from "./Header.tsx";
 import Home from "../pages/Home.tsx";

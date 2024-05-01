@@ -1,4 +1,4 @@
-import '../styles/pages/Contacts.module.scss'
+import '../styles/pages/Contacts.scss'
 
 
 function Contacts() {
