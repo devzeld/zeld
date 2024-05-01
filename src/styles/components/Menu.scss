@@ -1,0 +1,42 @@
+.menu {
+  .menu-list {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    li {
+      padding: 0 15px;
+
+      a {
+        position: relative;
+        background: -webkit-linear-gradient(90deg, rgba(0,133,255,1) 40%, rgb(141, 96, 251) 120%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        cursor: pointer;
+
+        &::after {
+          margin-top: 10px;
+          content: "";
+          position: absolute;
+          width: 100%;
+          transform: scaleX(0);
+          height: 2px;
+          bottom: 0;
+          left: 0;
+          background: -webkit-linear-gradient(90deg, rgba(0,133,255,1) 40%, rgb(141, 96, 251) 120%);
+          transform-origin: bottom right;
+          transition: transform 0.3s ease-in-out;
+        }
+
+        &:hover{
+          &::after {
+            margin-top: 10px;
+            transform: scaleX(1);
+            transform-origin: bottom left;
+          }
+        }
+      }
+    }
+  }
+}
