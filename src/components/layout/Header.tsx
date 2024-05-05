@@ -1,4 +1,4 @@
-import '../styles/components/Header.scss'
+import '../../styles/components/_Header.scss'
 import Menu from "./Menu.tsx";
 import Logo from "./Logo.tsx";
 
@@ -6,12 +6,12 @@ function Header() {
     
     return (
         <>
-            <div>
+            <header>
                 <Logo/>
                 <Menu/>
-            </div>
+            </header>
         </>
     )
 }
 
-export default Header
+export default Header;

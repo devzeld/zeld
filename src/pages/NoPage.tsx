@@ -1,6 +1,4 @@
 
-
-
 function NoPage() {
     return (
         <>

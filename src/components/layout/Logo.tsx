@@ -1,4 +1,4 @@
-import '../styles/components/Logo.scss';
+import '../../styles/components/_Logo.scss';
 
 function Logo() {
     return (

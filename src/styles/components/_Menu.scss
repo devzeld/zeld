@@ -1,7 +1,15 @@
-
-$gradiant-color: -webkit-linear-gradient(90deg, rgba(0,133,255,1) 40%, rgb(141, 96, 251) 120%);
+@use '../abstract/' as *;
 
 .menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  
+  //just an idea
+  //border-bottom: c.$p-color 2px solid;
+  //box-shadow: 10px 10px 45px 14px rgba(0,0,0,0.7);
+
   .menu-list {
     padding: 0;
     display: flex;
@@ -12,8 +20,9 @@ $gradiant-color: -webkit-linear-gradient(90deg, rgba(0,133,255,1) 40%, rgb(141, 
       padding: 0 15px;
 
       a {
+        font-weight: 600;
         position: relative;
-        background: $gradiant-color;
+        background: $gradiant-color0;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         cursor: pointer;
@@ -27,16 +36,16 @@ $gradiant-color: -webkit-linear-gradient(90deg, rgba(0,133,255,1) 40%, rgb(141, 
           height: 2px;
           bottom: 0;
           left: 0;
-          background: $gradiant-color;
-          transform-origin: bottom right;
-          transition: transform 0.3s ease-in-out;
+          background: $gradiant-color90;
+          transform-origin: center;
+          transition: transform 200ms ease-in-out;
         }
 
         &:hover{
           &::after {
             margin-top: 10px;
             transform: scaleX(1);
-            transform-origin: bottom left;
+            transform-origin: center;
           }
         }
       }
