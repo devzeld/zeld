@@ -1,4 +1,4 @@
-@use '../abstract/' as *;
+@use '../helpers/' as *;
 
 .menu {
   position: fixed;
@@ -18,7 +18,6 @@
 
     li {
       padding: 0 15px;
-
       a {
         font-weight: 600;
         position: relative;

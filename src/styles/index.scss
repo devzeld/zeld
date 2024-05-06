@@ -1,5 +1,6 @@
 
-@use './abstract/' as *;
+@use './helpers/' as *;
+@import './pages/Home';
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -15,6 +16,15 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+
+@each $color, $shades in $colors{ 
+  @each $shade, $value in $shades{
+    .text-#{$color}-#{$shade} {
+      color: $value;
+    }
+  }
+} 
 
 body {
   margin: 0;

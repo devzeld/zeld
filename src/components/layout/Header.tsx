@@ -1,4 +1,4 @@
-import '../../styles/components/_Header.scss'
+import '../../styles/components/_header.scss'
 import Menu from "./Menu.tsx";
 import Logo from "./Logo.tsx";
 

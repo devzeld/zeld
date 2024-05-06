@@ -1,10 +1,10 @@
-import '../styles/pages/_Contacts.scss'
+import '../styles/pages/_contacts.scss'
 
 
 function Contacts() {
     return (
         <>
-            <p>sfnsbf</p>
+            
         </>
     )
 }

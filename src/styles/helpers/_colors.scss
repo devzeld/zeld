@@ -1,0 +1,22 @@
+$colors: (
+    primary: (
+        100: rgb(25, 0, 255),
+        200: rgba(17, 0, 255, 0.548),
+        300: rgb(5, 0, 255),
+        400: rgb(0, 0, 255),
+    ),
+    abstract: (
+        100: rgb(25, 0, 255),
+        200: rgba(17, 0, 255, 0.548),
+        300: rgb(5, 0, 255),
+        400: rgb(0, 0, 255),
+    )
+);
+
+
+
+// Gradiant
+$gradiant-color0: -webkit-linear-gradient(0deg, rgba(0,133,255,1) 40%, rgb(141, 96, 251) 100%);
+$gradiant-color90: -webkit-linear-gradient(0deg, rgba(0,133,255,1) 40%, rgb(141, 96, 251) 80%);
+//Tag Colors
+$p-color: #9a9a9a;
