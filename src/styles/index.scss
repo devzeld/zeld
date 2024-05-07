@@ -1,6 +1,5 @@
-
-@use './helpers/' as *;
-@import './pages/Home';
+@use "./helpers/" as *;
+@import "./pages/Home";
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -17,14 +16,13 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-
-@each $color, $shades in $colors{ 
-  @each $shade, $value in $shades{
+@each $color, $shades in $colors {
+  @each $shade, $value in $shades {
     .text-#{$color}-#{$shade} {
       color: $value;
     }
   }
-} 
+}
 
 body {
   margin: 0;
@@ -39,21 +37,19 @@ h1 {
   line-height: 1.1;
 }
 
-ul{
+ul {
   @include reset-list;
 }
 
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-}
-
+// @media (prefers-color-scheme: light) {
+//   :root {
+//     color: #213547;
+//     background-color: #ffffff;
+//   }
+//   a:hover {
+//     color: #747bff;
+//   }
+//   button {
+//     background-color: #f9f9f9;
+//   }
+// }
