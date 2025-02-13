@@ -1,21 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+  --space-cadet: #141b41ff;
+  --green-blue: #306bacff;
+  --cornflower-blue: #6f9cebff;
+  --jordy-blue: #98b9f2ff;
+  --tropical-indigo: #918ef4ff;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --font-color: #fff;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(130deg, var(--space-cadet), var(--green-blue)) no-repeat fixed;
+
+  font-family: "M PLUS Rounded 1c", serif;
+  font-weight: 700;
+  font-size: 20px;
+  
+  color: var(--font-color);
+}
+
+Header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto;
+
+  background: rgba(0, 0, 0, 0.3)
+}
+
+ul{
+  display: flex;
+}
+
+li{ 
+  border-radius: 10px;
+  margin: 5px;
+  padding: 20px;
+  transition: 500ms cubic-bezier(0,2.1,1,-0.68);
+  cursor: pointer;
+  height: 100%;
 }
