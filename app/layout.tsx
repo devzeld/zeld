@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "devzeld",
+  title: "Home",
   description: "Just a simple introduction!"
 };
 
