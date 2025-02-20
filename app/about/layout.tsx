@@ -11,8 +11,8 @@ export default function NestedLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <nav>
+    <main>
         {children}
-    </nav>
+    </main>
   );
 }

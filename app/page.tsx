@@ -1,4 +1,4 @@
-import Spotify from "@/components/spotify";
+import TypeWriter from "@/components/type-writer";
 
 export default function Home() {
   //const typeHere = document.querySelector(".typewriter h1 span");
@@ -32,12 +32,11 @@ export default function Home() {
   //typingAnimation();
   return (
     <section>
-      <div className="typewriter">
+      <div >
         <h1>
-          Hi, I am <span>zeld</span>
+          Hi, I am <TypeWriter text=" zeld" delay={400}/>
         </h1>
         <h2></h2>
-        <Spotify/>
       </div>
     </section>
   );

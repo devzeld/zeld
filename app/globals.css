@@ -87,9 +87,7 @@ li{
   bottom: 0;
 }
 
-
-
-.typewriter h1 span{
+.typewriter{
   overflow: hidden;
   border-right: .15rem solid orange;
   white-space: nowrap;
