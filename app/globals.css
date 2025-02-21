@@ -1,26 +1,77 @@
-@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-.typewriter{
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgb(255, 255, 255);
+  background-color: #121212;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.typewriter {
   overflow: hidden;
-  border-right: .15rem solid orange;
+  border-right: 0.15rem solid #3a81f5;
   white-space: nowrap;
   margin: 0 auto;
-  letter-spacing: .15rem;
-  animation: 
-  typing 3.5s steps(40, end),
-  blink-caret .75s step-end infinite;
+  letter-spacing: 0.05rem;
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
 }
 
 @keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
 
 @keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: orange; }
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #3a81f5;
+  }
+}
+
+.underline {
+  position: relative;
+  background: white;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.underline::after {
+  margin-top: 10px;
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background: white;
+  transform-origin: center;
+  transition: transform 200ms ease-in-out;
+}
+
+.underline:active::after,
+.underline:hover::after {
+  margin-top: 10px;
+  transform: scaleX(1);
+  transform-origin: center;
 }

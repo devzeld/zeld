@@ -4,7 +4,7 @@ import Link from 'next/link';
 export default function Header() {
 
     const styles = {
-        li: 'hover:text-blue-500 hover:bg-gradient-to-r from-blue-500 to-blue-700 hover:bg-clip-text hover:text-transparent transition delay-150 duration-200 ease-in-out',
+        li: 'underline transition delay-150 duration-200 all',
     }
 
     return (
