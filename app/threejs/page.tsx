@@ -19,7 +19,7 @@ export default function ThreeScene() {
       containerRef.current?.appendChild(renderer.domElement);
       camera.position.z = 5;
 
-      const geometry = new THREE.SphereGeometry();
+      const geometry = new THREE.CylinderGeometry();
       const material = new THREE.MeshBasicMaterial({ color: 0xffffff });
       const cube = new THREE.Mesh(geometry, material);
       scene.add(cube);

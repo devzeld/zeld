@@ -31,7 +31,7 @@ export default function Home() {
 
   //typingAnimation();
   return (
-    <section>
+    <section className="hero">
       <div >
         <h1>
           Hi, I am <TypeWriter text=" zeld" delay={400}/>
