@@ -18,8 +18,9 @@ export default function Header() {
 
   return (
     /*header = bg-gradient-to-r from-blue-500 to-blue-700*/
-    <header className="flex justify-between items-center py-4 px-8 bg-gradient-to-r from-blue-500 to-blue-700">
-      <div></div>
+    <header className="sticky top-0 ">
+      <div className="flex justify-between items-center py-4 px-8 bg-gradient-to-r from-blue-500 to-blue-700">
+      <div className="logo"></div>
       <nav className="flex text-align-center">
         <ul className="flex space-x-8 content-center font-semibold text-xl">
           <li
@@ -56,6 +57,7 @@ export default function Header() {
       </nav>
       <div className="flex justify-end">
         <ModeToggle />
+      </div>
       </div>
     </header>
   );

@@ -23,5 +23,5 @@ export default function TypeWriter({
     }
   }, [currentIndex, delay, text]);
 
-  return <span className="typewriter">{currentText}</span>;
+  return <span className="typewriter text-border">{currentText}</span>;
 }
