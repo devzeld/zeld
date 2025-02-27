@@ -18,13 +18,19 @@ export default function Home() {
         </div>
         <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
           <div className="text-left">
-            <h1 className="text-5xl font-semibold tracking-tight text-balance  sm:text-7xl">
+            <h1 className="text-5xl font-semibold tracking-tight text-balance sm:text-7xl">
               Hi, I am <TypeWriter text="zeld" delay={300} />
             </h1>
-            <p className="mt-8 text-lg font-medium text-pretty sm:text-xl/8">
-              Just a chill guy, <span>Developer</span>
+            <p className="mt-8 text-xl font-medium text-pretty sm:text-xl/8">
+              Just a chill <span className="text-border">developer</span>
             </p>
           </div>
+          <p className="py-10">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+            ratione tempore reiciendis repellendus fuga fugiat voluptas
+            necessitatibus, consectetur asperiores recusandae deserunt iste
+            culpa harum officiis magnam facere porro labore ullam.
+          </p>
         </div>
         <div
           aria-hidden="true"

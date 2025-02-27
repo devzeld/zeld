@@ -3,7 +3,6 @@
 import React from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import ModeToggle from "./mode-toggle";
 
 export default function Header() {
   const path = usePathname();
@@ -13,33 +12,33 @@ export default function Header() {
   };
 
   const styles = {
-    li: "transition delay-150 duration-200 all",
+    li: "transition delay-150 duration-200 ease-in-out",
+    active: "bg-gradient-to-r from-blue-500 to-blue-700 bg-clip-text text-transparent ",
   };
 
   return (
-    /*header = bg-gradient-to-r from-blue-500 to-blue-700*/
-    <header className="sticky top-0 ">
-      <div className="flex justify-between items-center py-4 px-8 bg-gradient-to-r from-blue-500 to-blue-700">
+    <header className="sticky top-0">
+      <div className="flex justify-between items-center py-8 px-8">
       <div className="logo"></div>
       <nav className="flex text-align-center">
-        <ul className="flex space-x-8 content-center font-semibold text-xl">
+        <ul className="flex space-x-8 content-center font-semibold text-2xl" >
           <li
             className={
-              (isActive("/") ? "active " : "hover-underline ") + styles.li
+              (isActive("/") ? styles.active : "hover-underline ") + styles.li
             }
           >
             <Link href="/">Home</Link>
           </li>
           <li
             className={
-              (isActive("/about") ? "active " : "hover-underline ") + styles.li
+              (isActive("/about") ? styles.active : "hover-underline ") + styles.li
             }
           >
             <Link href="/about">About</Link>
           </li>
           <li
             className={
-              (isActive("/projects") ? "active " : "hover-underline ") +
+              (isActive("/projects") ? styles.active : "hover-underline ") +
               styles.li
             }
           >
@@ -47,7 +46,7 @@ export default function Header() {
           </li>
           <li
             className={
-              (isActive("/contact") ? "active " : "hover-underline ") +
+              (isActive("/contact") ? styles.active : "hover-underline ") +
               styles.li
             }
           >
@@ -55,8 +54,8 @@ export default function Header() {
           </li>
         </ul>
       </nav>
-      <div className="flex justify-end">
-        <ModeToggle />
+      <div className="flex">
+        {/* <ModeToggle /> */}
       </div>
       </div>
     </header>
