@@ -22,7 +22,7 @@ export default function Home() {
               Hi, I am <TypeWriter text="zeld" delay={300} />
             </h1>
             <p className="mt-8 text-xl font-medium text-pretty sm:text-xl/8">
-              Just a chill <span className="text-border">developer</span>
+              Just a chill <span className="text-border-sm">developer</span>
             </p>
           </div>
           <p className="py-10">

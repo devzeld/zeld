@@ -13,7 +13,7 @@ export default function Header() {
 
   const styles = {
     li: "transition delay-150 duration-200 ease-in-out",
-    active: "bg-gradient-to-r from-blue-500 to-blue-700 bg-clip-text text-transparent ",
+    active: "active bg-clip-text text-transparent",
   };
 
   return (
@@ -21,7 +21,7 @@ export default function Header() {
       <div className="flex justify-between items-center py-8 px-8">
       <div className="logo"></div>
       <nav className="flex text-align-center">
-        <ul className="flex space-x-8 content-center font-semibold text-2xl" >
+        <ul className="flex space-x-10 content-center font-semibold text-2xl" >
           <li
             className={
               (isActive("/") ? styles.active : "hover-underline ") + styles.li
